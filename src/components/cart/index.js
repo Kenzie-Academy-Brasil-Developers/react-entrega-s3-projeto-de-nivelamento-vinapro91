@@ -7,21 +7,6 @@ const Cart = ({ cart, setCart }) => {
   return (
     <div>
       <div>
-        <p>
-          preço total :
-          {cart.reduce((acc, currentvalue) => {
-            const total = currentvalue.price - currentvalue.discount;
-            return acc + total;
-          }, 0)}
-        </p>
-        <div>-</div>
-        <p>
-          desconto total :
-          {cart.reduce((acc, currentvalue) => {
-            const total = acc + currentvalue.discount;
-            return total;
-          }, 0)}
-        </p>
         {cart.map((item, index) => (
           <section key={index}>
             <p>Produto: {item.name}</p>
