@@ -1,0 +1,10 @@
+div {
+  display: flex;
+}
+section {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+  margin: 5px;
+}
